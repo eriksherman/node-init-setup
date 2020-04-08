@@ -1,0 +1,34 @@
+{
+	"name": "node-init-setup",
+	"version": "1.0.0",
+	"description": "node js initial setup with prettier, eslint, husky, and pretty-quick",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/eriksherman/node-init-setup.git"
+	},
+	"keywords": [],
+	"author": "Erik Sherman",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/eriksherman/node-init-setup/issues"
+	},
+	"homepage": "https://github.com/eriksherman/node-init-setup#readme",
+	"dependencies": {},
+	"devDependencies": {
+		"eslint": "^6.8.0",
+		"eslint-config-prettier": "^6.10.1",
+		"eslint-plugin-prettier": "^3.1.2",
+		"husky": "^4.2.3",
+		"prettier": "^2.0.4",
+		"pretty-quick": "^2.0.1"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "pretty-quick --staged"
+		}
+	}
+}
